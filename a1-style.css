@@ -1,0 +1,313 @@
+@font-face {
+    font-family: Roboto-bold;
+    src: url(Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-thin;
+    src: url(Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: Roboto-regular;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-medium-italic;
+    src: url(Roboto-MediumItalic.ttf);
+}
+/* General class structure:
+"Containers" contain content that covers the screen-width that is not white. 
+"Boxes" are placed in containers for formatting help. 
+ t# is for texts and fonts. */
+
+body {
+    font-family: Roboto-regular, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100vw; 
+    height: 20vh; 
+    padding: 20px;
+    margin: 0;  
+    background-color: #1e2836;
+    text-align: center;                      
+    justify-content: center;     
+    align-items: center;  
+}
+
+.container2 {
+    display: flex;              
+    width: 100vw;
+    padding: 20px;  
+    margin: 0;
+    justify-content: center;     
+    align-items: center; 
+    text-align: center;          
+    height: 45vh;               
+    background-color: #1e2836;  
+}
+
+.box {
+    background-color: #1e2836;
+    color: white;               
+    text-align: left;
+    width: 25vw;
+}
+
+.box2 {               
+    padding: 20px;
+    margin: 10px;
+    background-color: #6d737d; 
+    width: 240px;           
+    height: 120px;          
+    color: white;           
+    display: flex;          
+    justify-content: center; 
+    align-items: center;    
+    font-family: Roboto-regular;
+    font-size: 0.8em;
+}
+
+.container3 {
+    display: flex;              
+    width: 65%;
+    padding: 10px;  
+    margin: auto;
+    justify-content: center;     
+    align-items: center;    
+    text-align: center;          
+    height: 25%;               
+    background-color: white;
+}
+
+.blue-box {
+    width: 200px;              
+    height: 120px;             
+    background-color: white;   
+    border: 4px solid #3783f4; 
+    border-radius: 8px;       
+    box-sizing: border-box;  
+    margin: 15px;  
+}
+
+.h1 {
+    font-family: Roboto-bold;
+    font-size: 2em;
+    color: #000000;
+}
+
+.h2 {
+    font-family: Roboto-bold;
+    font-size: 2em;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.t1 {
+    color: white; 
+    font-family: Roboto-regular;
+    font-size: 0.92em;
+}
+
+.t2 {
+    color: #000000;
+    font-family: Roboto-regular;
+    font-size: 0.92em;
+    text-align: justify;
+    width: 25vw; 
+}
+
+
+a {
+    color: white; 
+    text-decoration: none;
+    font-family: Roboto-thin;
+    font-size: 0.85em;
+    margin: 6px;
+}
+
+hr {
+    border: none; 
+    border-top: 1px solid #565656; 
+    margin: 20px 0; 
+    width: calc(100% + 40px); 
+    margin-left: -20px; 
+}
+
+button {
+    padding: 8px 25px;
+    background-color: #3783f4;
+    color: white;
+    border: none; 
+    border-radius: 10px;    
+    font-family: Roboto-bold;
+}
+
+.container4 {          
+    width: 100vw;
+    padding: 20px;  
+    text-align: center;          
+    height: 38vh;               
+    background-color: #e4e5eb 
+}
+
+.t3 {
+    color: #000000;
+    font-family: Roboto-medium-italic;
+    font-size: 1.3em;
+    text-align: justify;    
+    width: 58vw; 
+    margin: auto; 
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.t4 {
+    color: #000000;
+    font-family: Roboto-bold;
+    font-size: 1.3em;
+    text-align: justify;
+    width: 79vw; 
+    text-align: right;
+}
+
+.container5blue {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;               
+    width: 62vw;
+    padding: 20px;  
+    margin: auto; 
+    text-align: center;          
+    height: 13vh;               
+    background-color: #3783f4;
+    border-radius: 10px;  
+}
+
+.box3 {       
+    width: 3vw;
+    flex: 0.22;
+    padding: 20px;  
+    margin: auto; 
+    text-align: center;          
+    height: 5vh;               
+    background-color: #3783f4;
+}
+
+.box4 {
+    flex: 2;
+    text-align: start; 
+    padding: 0px;  
+    margin: 0; 
+    height: 16vh;     
+    background-color: #3783f4;
+}
+
+.t5 {
+    color: white; 
+    font-family: Roboto-bold;
+    font-size: 1.1em;
+    text-align: left;
+    margin: 0; 
+    padding: 0;
+}   
+
+.t6 {
+    color: white; 
+    font-family: Roboto-regular;
+    font-size: 1.1em;
+    text-align: left;
+    margin: 0; 
+    padding: 0;
+}   
+
+.box5 {
+                  
+    width: 3vw;
+    flex: 0.9;
+    padding: 20px;  
+    margin: auto; 
+    text-align: center;          
+    height: 5vh;               
+    background-color: #3783f4;
+    border-radius: 10px;  
+}
+
+.button2 {
+    padding: 2px 18px;
+    flex: 1;
+    background-color: #3783f4;
+    color: white;
+    border: 2px solid white; 
+    border-radius: 5px;    
+    font-family: Roboto-bold;
+}
+
+footer {
+    display: flex;
+    width: 100vw;             
+    height: 14vh; 
+    padding: 20px;
+    background-color: #1e2836;
+    text-align: center;                      
+    justify-content: center;     
+    align-items: center;  
+}
+
+.t7 {
+    color: #ffffff;
+    font-family: Roboto-thin;
+    font-size: 0.92em;
+    text-align: center;
+    width: 100vw; 
+}
+
+/*CSS for dynamic-posts below*/
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    flex: 0 0 calc(33.333% - 20px); 
+    border: 1px solid #424242;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Css for Weather page below */
+.weather-container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    max-width: 47%;
+    margin: 0 auto;
+}
+
+.grid-row {
+    display: contents; 
+}
+
+.gridHeader {
+    font-family: Roboto-bold !important;
+    background-color: #797979 !important;
+    font-size: 1.1em;
+    color:#000000;
+}
+
+.grid-cell {
+    padding: 8px;
+    border: 1px solid #434343;
+    background-color: #c6c6c6;
+    font-family: Roboto-regular;
+    text-align: center;
+    font-size: 1.1em;
+    color:#000000
+}
+

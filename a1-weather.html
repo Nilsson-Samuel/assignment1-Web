@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <title>Demo Webside</title>
+    <link rel="stylesheet" href="a1-style.css">
+    <script src="a1-script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            fetchWeather();
+            setInterval(fetchWeather, 20000);
+        });
+    </script>
+</head>
+
+<body>    
+    <header>  
+        <p style="color: white;">Header logo</p>
+        <nav>
+            <a href="a1-index.html">  Home  </a>
+            <a href="a1-dynamic-posts.html" id="dynamicPosts">Dynamic Posts</a>
+            <a href="#" id="weather">Weather  </a>         
+        </nav>
+        <hr>
+    </header>
+    
+    <br><br>
+    <div id="weather-container" class="weather-container"></div>  <!-- JavaScript loads content in here-->
+    <br><br>
+
+    <footer>
+        <div class="t7">
+            <p> Copyright ©</p>
+        </div>
+    </footer>
+</body>
+</html>

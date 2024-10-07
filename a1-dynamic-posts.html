@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <title>Demo Webside</title>
+    <link rel="stylesheet" href="a1-style.css">
+    <script src="a1-script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            //Makes sure enough posts are loaded, so the scroll function is activated:
+            fetchDynamicPosts();
+            fetchDynamicPosts(); 
+            fetchDynamicPosts(); 
+            fetchDynamicPosts();                     
+        });
+
+        window.onscroll = function() {    
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-200) {
+                    fetchDynamicPosts();
+                }   
+            };
+    </script>
+</head>
+
+<body>    
+    <header>  
+        <p style="color: white;">Header logo</p>
+        <nav>
+            <a href="a1-index.html">  Home  </a>
+            <a href="#" id="dynamicPosts">Dynamic Posts</a>
+            <a href="a1-weather.html" >Weather  </a>         
+        </nav>
+        <hr>
+    </header>
+    
+    <div id="dynamicPosts"></div>
+
+    <div id="main-container" class="post-container"></div>  <!-- JavaScript loads content in here-->
+
+    <footer> 
+        <div class="t7">
+            <p> Copyright ©</p>
+        </div>
+    </footer>
+</body>
+</html>
